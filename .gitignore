@@ -1,0 +1,11 @@
+# ignore generated binary
+go-s3hash
+
+# ignore ignore/
+ignore/
+
+# ignore output file
+s3hashes.csv
+
+# ignore log file
+s3hash.log
