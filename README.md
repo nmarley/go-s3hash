@@ -12,6 +12,23 @@ This is written as a Proof-of-Concept / Demo and not for production use, but cou
 go build
 ```
 
+## Usage/Run
+
+```sh
+% ./go-s3hash
+Error: required flag(s) "bucket", "keys-file" not set
+Usage:
+  s3hash [flags]
+
+Flags:
+      --bucket string        The s3 bucket from which to fetch objects
+  -h, --help                 help for s3hash
+      --keys-file string     The input file from which to read s3 keys
+      --num-threads uint16   The number of threads to use (defaults to NUM_CPUS * 2) (default 32)
+
+% ./go-s3hash --bucket mybucket --keys-file keys.txt
+```
+
 ## Dependency Updates
 
 To update dependencies:
